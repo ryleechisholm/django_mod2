@@ -1,0 +1,28 @@
+body {
+  background: skyblue;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5em;
+  margin: 1.5em;
+}
+
+.team {
+  padding: 1.5em;
+  margin: 1.5em;
+  background: white;
+  height: 200px;
+  width: 200px;
+}
+
+.head {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.par {
+  font-size: 1em;
+}
