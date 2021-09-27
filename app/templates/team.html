@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Team</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+  </head>
+  <body>
+    <h1 class="teamheader">{{ name }} Team</h1>
+    <div class="infobox">
+      <p class="info">
+        {{team_info}}
+      </p>
+      <p class="members">The members are:</p>
+      <ul>
+        {% for member in members %}
+        <li>{{member}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
