@@ -3,45 +3,48 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <title>The Teams</title>
     <link rel="stylesheet" href="{% static "styles.css" %}">
   </head>
   <body>
     <h1 class="header">Base Camp Coding Academy Leadership Project Teams</h1>
     <div class="teams">
-      <div class="team">
-        <h2 class="head">Management Team</h2>
-        <p class="par">
-          The management team oversees the chores done at Base Camp and ensures
-          everyone is on task and on time.
-        </p>
-      </div>
-      <div class="team">
-        <h2 class="head">Procurement Team</h2>
-        <p class="par">
-          The procurement team orders all supplies needed at Base Camp and sets
-          out and cleans up lunch.
-        </p>
-      </div>
-      <div class="team">
-        <h2 class="head">Documentation Team</h2>
-        <p class="par">
-          The documentation team photographs all events, follows up with guest
-          speakers, and manages Base Camp's social medias.
-        </p>
-      </div>
-      <div class="team">
-        <h2 class="head">Community Team</h2>
-        <p class="par">
-          The community team plans all community events for students, as well as
-          hosts parties for birthdays and holidays.
-        </p>
-      </div>
+      <a href="{% url "t_template" title %}">
+        <div class="team">
+          <h2 class="head">Management Team</h2>
+          <p class="par">
+            The management team oversees the chores done at Base Camp and ensures
+            everyone is on task and on time.
+          </p>
+        </div>
+      </a>
+      <a href="/procurement/">
+        <div class="team">
+          <h2 class="head">Procurement Team</h2>
+          <p class="par">
+            The procurement team orders all supplies needed at Base Camp and sets
+            out and cleans up lunch.
+          </p>
+        </div>
+      </a>
+      <a href="/documentation/">
+        <div class="team">
+          <h2 class="head">Documentation Team</h2>
+          <p class="par">
+            The documentation team photographs all events, follows up with guest
+            speakers, and manages Base Camp's social medias.
+          </p>
+        </div>
+      </a>
+      <a href="/community/">
+        <div class="team">
+          <h2 class="head">Community Team</h2>
+          <p class="par">
+            The community team plans all community events for students, as well as
+            hosts parties for birthdays and holidays.
+          </p>
+        </div>
+      </a>
     </div>
   </body>
 </html>
